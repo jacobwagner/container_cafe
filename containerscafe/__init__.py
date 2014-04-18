@@ -1,0 +1,5 @@
+__title__ = 'containerscafe'
+__version__ = '0.0.1'
+__author__ = 'Rackspace Cloud QE'
+__license__ = 'Internal Only'
+__copyright__ = 'Copyright 2014 Rackspace Inc.'
