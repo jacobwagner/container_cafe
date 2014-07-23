@@ -21,10 +21,10 @@ import shutil
 import tempfile
 from time import sleep
 
-from containerscafe.containers.clients.base import BaseContainerClient
-from containerscafe.common.connectors.process \
+from containercafe.containers.clients.base import BaseContainerClient
+from containercafe.common.connectors.process \
     import _SIMPLE_SUCCESS_CMD_RESULT
-from containerscafe.common.states import State
+from containercafe.common.states import State
 
 
 class LXCError(Exception):

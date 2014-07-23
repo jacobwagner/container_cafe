@@ -14,8 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 """
 
-from containerscafe.common.states import State
-from containerscafe.containers.clients.base import BaseContainerClient
+from containercafe.common.states import State
+from containercafe.containers.clients.base import BaseContainerClient
 
 
 class HostContainerClient(BaseContainerClient):

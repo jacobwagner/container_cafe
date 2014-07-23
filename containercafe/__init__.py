@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 """
 
-__title__ = 'containerscafe'
+__title__ = 'containercafe'
 __version__ = '0.0.1'
 __author__ = 'Rackspace Cloud QE'
 __license__ = 'Apache License Version 2.0'

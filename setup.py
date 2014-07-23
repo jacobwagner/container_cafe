@@ -69,10 +69,10 @@ class install(_install):
 
 requires = open('pip-requires').readlines()
 setup(
-    name='containerscafe',
+    name='containercafe',
     version='0.0.1',
     description=(
-        'ContainersCAFE is an implementation of the Open CAFE Framework '
+        'ContainerCAFE is an implementation of the Open CAFE Framework '
         'specifically designed to test deployed versions of OpenStack'),
     long_description='{0}\n\n{1}'.format(
         open('README.md').read(),
