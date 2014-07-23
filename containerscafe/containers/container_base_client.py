@@ -1,3 +1,19 @@
+"""
+Copyright 2014 Rackspace
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+"""
+
 import os
 
 from containerscafe.common.states import State
@@ -70,4 +86,4 @@ class BaseContainerClient(object):
     def get_cfg(cls, rc_file, open_func=open):
         with open_func(rc_file, "r") as cfg_file:
             cfg = cfg_file.readlines()
-        return cfg_file
+        return cfg

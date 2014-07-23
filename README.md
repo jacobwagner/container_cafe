@@ -23,7 +23,7 @@ versions of Rackspace's Containers product. It is built using the [Open CAFE Cor
 
 Supported Operating Systems
 ---------------------------
-CloudCAFE has been developed primarily in Linux and MAC environments, however, it supports installation and
+ContainersCAFE has been developed primarily in Linux and MAC environments, however, it supports installation and
 execution on Windows
 
 Installation
