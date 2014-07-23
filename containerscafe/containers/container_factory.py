@@ -1,9 +1,24 @@
 """
+Copyright 2014 Rackspace
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
 Purpose: Given a container technology (LXC, libContainer) and a connection type
          (ssh, API, local), build a "universal" client for consumption by the
         tests and behaviors.
 
 """
+
 # Containers
 from containerscafe.containers.LXC.LXC_container_host import LxcContainer
 from containerscafe.containers.container_host import HostContainerClient
@@ -66,10 +81,10 @@ class BuildContainerClient(object):
     TARGET_TYPES = [HOST, HOST_TO_CONTAINER, LOCAL, CONTAINER]
     RC_FILE = 'rc_file'
 
-
-    def __init__(self, container_type, test_ref_point, test_config,
-             container_config, container_name, rc_file=None, username=None,
-             password=None, port=None, clean=True):
+    def __init__(self, container_type, test_ref_point,
+                 test_config, container_config, container_name,
+                 rc_file=None, username=None, password=None,
+                 port=None, clean=True):
         self.container_name = container_name
         self.container_type = container_type
         self.container_config = container_config
@@ -94,9 +109,9 @@ class BuildContainerClient(object):
             self.password = getattr(
                 self.container_config, '{0}_password'.format(self.type_))
 
-    def get_client(self, container_type=None, test_ref_point=None, clean=None,
-                   container_name=None, username=None, password=None,
-                   port=None):
+    def get_client(self, container_type=None, test_ref_point=None,
+                   clean=None, container_name=None, username=None,
+                   password=None, port=None):
 
         # Use values provided or use factory defaults
         container_type = container_type or self.container_type
