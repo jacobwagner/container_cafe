@@ -35,7 +35,6 @@ class CommandResult(object):
     def content(self):
         return self._output
 
-
 _SIMPLE_SUCCESS_CMD_RESULT = CommandResult(0, '')
 
 

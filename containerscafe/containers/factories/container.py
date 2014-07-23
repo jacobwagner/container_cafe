@@ -14,14 +14,14 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 Purpose: Given a container technology (LXC, libContainer) and a connection type
-         (ssh, API, local), build a "universal" client for consumption by the
+        (ssh, API, local), build a "universal" client for consumption by the
         tests and behaviors.
 
 """
 
 # Containers
-from containerscafe.containers.LXC.LXC_container_host import LxcContainer
-from containerscafe.containers.container_host import HostContainerClient
+from containerscafe.containers.lxc.container_host import LxcContainer
+from containerscafe.containers.clients.host import HostContainerClient
 
 # Connections
 from cafe.engine.ssh.client import BaseSSHClient
